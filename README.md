@@ -11,4 +11,12 @@ Line following robots, AGVs, or other mobile robots traditionally employ multipl
 
 1) We have placed random objects at various points on the map
 
-1) 6 ArUco stickers have been used to detect the four corners on the map, and the position of the robot and the 
+1) 6 ArUco stickers have been used to detect the four corners on the map, and the position of the robot and the goal position.
+
+
+## Structure
+The entire code consists of the following steps:
+
+*) Continuously take images from the camera till all 6 ArUco stickers are identified.
+*) Use the four corner stickers to create a Perspective transformed top view image of the enitre area.
+*) 
